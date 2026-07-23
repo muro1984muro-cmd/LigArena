@@ -462,3 +462,38 @@ color:#18b45b;
 color:#18b45b;
 
 }
+.featured-match{
+background:#171a21;
+border:2px solid #18b45b;
+border-radius:20px;
+padding:30px;
+margin:30px 0;
+text-align:center;
+}
+
+.teams{
+display:flex;
+justify-content:space-around;
+align-items:center;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.team h3{
+font-size:30px;
+color:#fff;
+}
+
+.score h1{
+font-size:50px;
+color:#18b45b;
+margin:10px 0;
+}
+
+.score span{
+background:#18b45b;
+color:#fff;
+padding:6px 14px;
+border-radius:20px;
+font-weight:bold;
+}
