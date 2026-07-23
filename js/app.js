@@ -1,4 +1,5 @@
 const API_KEY = "e639d1554da4579b85e63e33c3db94f1";
+console.log("LigArena API çalışıyor");
 
 const API_URL = "https://v3.football.api-sports.io/fixtures?live=all&league=203";
 
