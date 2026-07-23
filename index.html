@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LigArena</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+<title>LigArena</title>
 
-  <!-- Kendi CSS -->
-  <link rel="stylesheet" href="css/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -25,19 +25,17 @@
 <nav>
 
 <a class="active" href="#">Ana Sayfa</a>
-<a href="#">Maçlar</a>
-<a href="#">Puan Durumu</a>
-<a href="#">Takımlar</a>
-<a href="#">Transfer</a>
-<a href="#">İstatistik</a>
+<a href="#maclar">Maçlar</a>
+<a href="#puan">Puan Durumu</a>
+<a href="#haberler">Haberler</a>
+<a href="#transfer">Transfer</a>
+<a href="#istatistik">İstatistik</a>
 
 </nav>
 
 <div class="search">
 
-<input
-type="text"
-placeholder="Takım veya oyuncu ara">
+<input type="text" placeholder="Takım veya oyuncu ara">
 
 </div>
 
@@ -45,7 +43,9 @@ placeholder="Takım veya oyuncu ara">
 
 </header>
 
+
 <main>
+
 
 <section class="hero">
 
@@ -55,10 +55,12 @@ placeholder="Takım veya oyuncu ara">
 🔴 CANLI
 </span>
 
+
 <h1>
 Türkiye Süper Liginin<br>
 En Modern Platformu
 </h1>
+
 
 <p>
 Canlı maçlar<br>
@@ -68,6 +70,7 @@ Transferler<br>
 İstatistikler<br>
 ve daha fazlası.
 </p>
+
 
 <div class="hero-buttons">
 
@@ -85,75 +88,346 @@ Puan Durumu
 
 </section>
 
-<!-- Öne Çıkan Maç -->
 
-<section class="featured-match">
 
-<h2>🔥 Bugünün Öne Çıkan Maçı</h2>
+<!-- ÖNE ÇIKAN MAÇ -->
+
+<section id="maclar" class="featured-match">
+
+<h2>
+🔥 Bugünün Öne Çıkan Maçı
+</h2>
+
 
 <div class="teams">
 
+
 <div class="team">
-<h3>🦅 Beşiktaş</h3>
+
+<h3>
+🦅 Beşiktaş
+</h3>
+
 </div>
+
+
 
 <div class="score">
 
-<p>UEFA Avrupa Ligi 2. Ön Eleme</p>
+<p>
+UEFA Avrupa Ligi 2. Ön Eleme
+</p>
 
-<h1>21:00</h1>
+<h1>
+21:00
+</h1>
 
-<span>Bugün</span>
+<span>
+Bugün
+</span>
 
 </div>
+
+
 
 <div class="team">
-<h3>🐺 Midtjylland</h3>
-</div>
+
+<h3>
+🐺 Midtjylland
+</h3>
 
 </div>
+
+
+</div>
+
 
 </section>
 
-<section class="grid">
 
-<div class="card">
-<h2>🔥 Son Dakika</h2>
-<p>En güncel Süper Lig haberleri burada yer alacak.</p>
-</div>
 
-<div class="card">
-<h2>📅 Fikstür</h2>
-<p>Bu haftanın maçlarını tek ekranda takip edin.</p>
-</div>
 
-<div class="card">
-<h2>📊 Puan Durumu</h2>
-<p>Anlık lig sıralaması.</p>
-</div>
+<!-- PUAN DURUMU -->
 
-<div class="card">
-<h2>🏆 Gol Krallığı</h2>
-<p>En golcü futbolcular.</p>
-</div>
 
-<div class="card">
-<h2>🎯 Asist Krallığı</h2>
-<p>En çok asist yapan oyuncular.</p>
-</div>
+<section id="puan" class="standings">
 
-<div class="card">
-<h2>🔄 Transfer Merkezi</h2>
-<p>Gelen ve giden oyuncular.</p>
-</div>
+
+<h2>
+📊 Trendyol Süper Lig 2026-2027 Puan Durumu
+</h2>
+
+
+<table class="table table-dark table-striped">
+
+
+<thead>
+
+<tr>
+
+<th>
+#
+</th>
+
+<th>
+Takım
+</th>
+
+<th>
+O
+</th>
+
+<th>
+G
+</th>
+
+<th>
+B
+</th>
+
+<th>
+M
+</th>
+
+<th>
+P
+</th>
+
+</tr>
+
+</thead>
+
+
+<tbody>
+
+
+<tr>
+<td>1</td>
+<td>🏆 Fenerbahçe</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+
+
+<tr>
+<td>2</td>
+<td>🔴 Galatasaray</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+
+
+<tr>
+<td>3</td>
+<td>⚫ Beşiktaş</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+
+
+<tr>
+<td>4</td>
+<td>🟢 Trabzonspor</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+
+
+<tr>
+<td>5</td>
+<td>🔵 Başakşehir</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+
+
+</tbody>
+
+
+</table>
+
 
 </section>
+<!-- HABERLER -->
+
+<section id="haberler" class="grid">
+
+<div class="card">
+
+<h2>
+🔥 Son Dakika
+</h2>
+
+<p>
+Süper Lig'den en yeni haberler, gelişmeler ve özel içerikler.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>
+📅 Fikstür
+</h2>
+
+<p>
+Bu haftanın maçlarını ve gelecek karşılaşmaları takip edin.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>
+🏆 Gol Krallığı
+</h2>
+
+<p>
+Sezonun en golcü futbolcuları burada olacak.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>
+🎯 Asist Krallığı
+</h2>
+
+<p>
+En çok asist yapan oyuncuların listesi.
+</p>
+
+</div>
+
+
+
+<div class="card" id="transfer">
+
+<h2>
+🔄 Transfer Merkezi
+</h2>
+
+<p>
+Gelenler, gidenler ve transfer söylentileri.
+</p>
+
+</div>
+
+
+
+<div class="card" id="istatistik">
+
+<h2>
+📈 İstatistik
+</h2>
+
+<p>
+Takım ve oyuncu performansları.
+</p>
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- POPÜLER TAKIMLAR -->
+
+<section class="featured-match">
+
+<h2>
+⚽ Popüler Takımlar
+</h2>
+
+
+<div class="teams">
+
+
+<div class="team">
+<h3>
+🟡🔵 Fenerbahçe
+</h3>
+</div>
+
+
+<div class="team">
+<h3>
+🔴🟡 Galatasaray
+</h3>
+</div>
+
+
+<div class="team">
+<h3>
+⚫⚪ Beşiktaş
+</h3>
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- FOOTER -->
+
+
+<footer style="text-align:center;padding:30px;background:#111;color:white;">
+
+<h3>
+⚽ LigArena
+</h3>
+
+<p>
+Türkiye futbolunun yeni nesil platformu
+</p>
+
+<p>
+© 2026 LigArena
+</p>
+
+</footer>
+
+
 
 </main>
+
+
 
 <script src="js/app.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
+
 </body>
+
 </html>
