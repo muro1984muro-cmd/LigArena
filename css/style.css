@@ -81,3 +81,36 @@ header h1{
 }
 
 }
+.hero{
+    background:linear-gradient(135deg,#18b45b,#0d7c3a);
+    padding:50px 20px;
+    text-align:center;
+    border-radius:20px;
+    margin-bottom:30px;
+}
+
+.hero h2{
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:18px;
+    color:white;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.card{
+    transition:.3s;
+    cursor:pointer;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.5);
+}
