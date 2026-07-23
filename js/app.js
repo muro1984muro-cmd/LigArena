@@ -10,7 +10,8 @@ const cevap = await fetch(
 
 const veri = await cevap.json();
 
-console.log(veri);
+console.log("Gelen veri:", veri);
+console.log("Hata:", veri.message);
 
 }
 
