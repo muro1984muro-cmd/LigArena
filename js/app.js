@@ -1,29 +1,15 @@
-const API_KEY = "123";
+console.log("LigArena başladı");
 
 
 async function maclariGetir(){
 
-try{
-
-const cevap = await fetch(
-"https://www.thesportsdb.com/api/v1/json/123/eventsnextleague.php?id=4339"
-);
-
-const veri = await cevap.json();
-
-
 let alan = document.querySelector("#maclar");
-
-
-if(veri.events){
-
-let mac = veri.events[0];
 
 
 alan.innerHTML = `
 
 <h2>
-🔥 Yaklaşan Maç
+🔴 CANLI MAÇ
 </h2>
 
 
@@ -31,11 +17,12 @@ alan.innerHTML = `
 
 
 <div class="team">
-<h3>
-${mac.strHomeTeam}
-</h3>
 
-<img src="${mac.strHomeTeamBadge}" width="60">
+<img src="https://r2.thesportsdb.com/images/media/team/badge/svo05k1776827439.png" width="80">
+
+<h3>
+Beşiktaş
+</h3>
 
 </div>
 
@@ -44,15 +31,15 @@ ${mac.strHomeTeam}
 <div class="score">
 
 <p>
-${mac.strLeague}
+UEFA Avrupa Ligi 2. Ön Eleme
 </p>
 
 <h1>
-${mac.strTime.slice(0,5)}
+21:00
 </h1>
 
 <span>
-${mac.dateEvent}
+Bugün
 </span>
 
 </div>
@@ -61,31 +48,18 @@ ${mac.dateEvent}
 
 <div class="team">
 
+<img src="https://r2.thesportsdb.com/images/media/team/badge/7fb0ub1626445710.png" width="80">
+
 <h3>
-${mac.strAwayTeam}
+Midtjylland
 </h3>
 
-<img src="${mac.strAwayTeamBadge}" width="60">
-
 </div>
 
 
 </div>
-
 
 `;
-
-}
-
-
-}
-
-catch(hata){
-
-console.log("Hata:", hata);
-
-}
-
 
 }
 
