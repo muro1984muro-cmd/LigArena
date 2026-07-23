@@ -1,4 +1,4 @@
-const API_KEY = "123";
+console.log("TheSportsDB başladı");
 
 async function maclariGetir(){
 
