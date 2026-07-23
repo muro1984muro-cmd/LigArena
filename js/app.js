@@ -1,98 +1,82 @@
-const API_KEY = "e639d1554da4579b85e63e33c3db94f1";
-console.log("LigArena API çalışıyor");
+const API_KEY = "123";
 
-const API_URL = "https://v3.football.api-sports.io/fixtures?live=all&league=203";
-
-
-async function canliMaclariGetir() {
-
-    try {
-
-        const cevap = await fetch(API_URL, {
-            headers: {
-                "x-apisports-key": API_KEY
-            }
-        });
+const LIG = "Turkish Super Lig";
 
 
-        const veri = await cevap.json();
+async function maclariGetir(){
+
+try{
+
+const cevap = await fetch(
+`https://www.thesportsdb.com/api/v1/json/${API_KEY}/eventsnextleague.php?id=4339`
+);
 
 
-        console.log(veri);
+const veri = await cevap.json();
 
 
-        if(veri.response.length === 0){
-
-            document.querySelector("#maclar").innerHTML += `
-            <p>Şu anda canlı Süper Lig maçı yok.</p>
-            `;
-
-            return;
-
-        }
+console.log(veri);
 
 
-        let maclar = "";
+let alan = document.querySelector("#maclar");
 
 
-        veri.response.forEach(mac => {
+let html = "";
 
 
-            maclar += `
+if(veri.events){
 
-            <div class="featured-match">
-
-            <h2>🔴 CANLI</h2>
-
-            <div class="teams">
-
-            <div class="team">
-            <h3>${mac.teams.home.name}</h3>
-            </div>
+veri.events.slice(0,5).forEach(mac=>{
 
 
-            <div class="score">
+html += `
 
-            <h1>
-            ${mac.goals.home} - ${mac.goals.away}
-            </h1>
+<div class="featured-match">
 
-            <span>
-            ${mac.fixture.status.elapsed}' 
-            </span>
+<h2>⚽ ${mac.strHomeTeam} - ${mac.strAwayTeam}</h2>
 
-            </div>
+<div class="score">
 
+<h1>
+${mac.dateEvent}
+</h1>
 
-            <div class="team">
-            <h3>${mac.teams.away.name}</h3>
-            </div>
+<p>
+${mac.strTime || ""}
+</p>
 
+</div>
 
-            </div>
+</div>
 
-            </div>
+`;
 
-            `;
-
-
-        });
+});
 
 
-        document.querySelector("#maclar").innerHTML += maclar;
+alan.innerHTML += html;
 
 
-    }
+}else{
 
 
-    catch(hata){
+alan.innerHTML += `
+<p>Maç bulunamadı.</p>
+`;
 
-        console.log("API Hatası:", hata);
+}
 
-    }
+
+}
+
+catch(hata){
+
+console.log("Hata:",hata);
+
+}
 
 
 }
 
 
-canliMaclariGetir();
+maclariGetir();
